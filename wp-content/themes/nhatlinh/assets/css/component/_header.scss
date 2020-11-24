@@ -1,0 +1,153 @@
+header {
+  position: absolute;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, 0);
+  top: 80px;
+  z-index: 1;
+  a {
+    height: 13px;
+    width: 164px;
+    color: #FFFFFF;
+    font-family: DIN;
+    font-size: 25px;
+    letter-spacing: 5px;
+    float: left;
+    line-height: 35px;
+  }
+  a:hover {
+    color: #FFFFFF;
+  }
+  #menuToggle
+  {
+    cursor: pointer;
+    display: block;
+    float: right;
+    span
+    {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin-bottom: 8px;
+      position: relative;
+      background: #FF3E00;
+    }
+    span:first-child {
+      width: 20px;
+    }
+    span:last-child {
+      width: 40px;
+    }
+  }
+}
+
+#menu
+{
+  top: 0;
+  position: absolute;
+  width: 515px;
+  height: 900px;
+  background: #FF3E00;
+  right: -750px;
+  z-index: 4;
+  padding-top: 80px;
+  transition: all 1s;
+  #close-menu {
+    cursor: pointer;
+    width: 30px;
+    margin-left: 15px;
+    img {
+      width: 100%;
+    }
+    img.white {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    #close-menu {
+      margin-left: 20px;
+    }
+  }
+  .menu-list {
+    float: right;
+    margin-right: 50px;
+    margin-top: 60px;
+    ul {
+      li {
+        margin: 20px 0;
+        a {
+          color: #262626;
+          font-size: 18px;
+          font-weight: 500;
+          position: relative;
+        }
+        a:before {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 140px;
+          background-color: #262626;
+          bottom: 0;
+          left: -150px;
+          transition: all 0.3s;
+        }
+        a:hover {
+          text-decoration: none;
+          opacity: 1;
+        }
+        a:hover:before {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+    ul#contact {
+      margin-top: 50px;
+    }
+  }
+  @media (min-width: 768px) {
+    .menu-list {
+      max-width: 300px;
+    }
+  }
+}
+
+#menu.open {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  #menu {
+    padding-top: 20px;
+    #close-menu {
+      img {
+      }
+      img.white {
+      }
+    }
+    .menu-list {
+      margin-top: 10px;
+      margin-right: 0;
+      margin-left: 100px;
+      float: left;
+      ul {
+        li {
+          a {
+            font-size: 14px;
+            letter-spacing: -0.6px;
+          }
+          a:before {
+            width: 70px;
+            left: -80px;
+          }
+          a:hover {
+          }
+          a:hover:before {
+          }
+        }
+      }
+      ul#contact {
+      }
+    }
+  }
+}
