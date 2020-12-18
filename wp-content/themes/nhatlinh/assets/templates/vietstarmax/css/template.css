@@ -708,7 +708,7 @@ ul.social-icons > li {
   padding: 20px;
 }
 #sp-bottom {
-  padding: 50px 0 30px;
+  padding: 50px 0 0;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -740,9 +740,10 @@ ul.social-icons > li {
   display: block;
 }
 #sp-footer {
+  font-family: fontRegular;
   font-size: 14px;
   padding: 0;
-  background: #b8292f !important;
+  background: #ffffff !important;
 }
 #sp-footer .container-inner {
   padding: 30px 0;
@@ -1788,7 +1789,7 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
 .bannertxt-l a{}
 .dv-item{
     text-align: center;
-    padding: 25px 0px;
+    padding: 0px 0px 15px 0;
 }
 #dich-vu-home .sppb-col-md-4:hover{background:#fff;}
 #dich-vu-home.sxphim .sppb-col-md-4:hover{background:none;}
@@ -2111,12 +2112,12 @@ div.rounding7 div.imgbox {
 .quay-phim ,.quay-phim p{margin-bottom:0 !important}
 .dktvda{
     margin-bottom: 0 !important;
-    background: #b8292f;
+    background: #ffffff;
     padding: 30px;
 }
 #dktv{
     text-align: center;
-    background: #b8292f;
+    background: #ffffff;
 }
 #dktv p:first-child{
     text-transform: uppercase;
@@ -2125,7 +2126,7 @@ div.rounding7 div.imgbox {
 }
 #dktv p{
     font-size: 16px;
-    color: #fff;
+    color: black;
 }
 #dktv a{
     color: #fff !important;
@@ -2929,6 +2930,11 @@ section.loi-ich-dv .sppb-addon-overlay-image-content{padding:0}
     width: 1140px;
   }
 }
+@media (max-width: 1200px) {
+  .dv-item{
+    padding: 25px 0px;
+}
+}
 
 @media (max-width: 1200px) {
 #sp-menu{flex: 0 0 13%;display: block;position: absolute !important;max-width: 50px;right: 0;}
@@ -3216,7 +3222,7 @@ ul.d-none {
 }
 .dktvda {
     margin-bottom: 0 !important;
-    background: #b8292f;
+    background: #ffffff;
     padding: 30px 0;
 }
 #dktv p:first-child {
